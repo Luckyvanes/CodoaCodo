@@ -1,0 +1,411 @@
+.body{
+      font-family: 'Roboto', sans-serif;
+}
+.container {
+      display: grid; 
+      grid-auto-flow: row dense; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 0.2fr 0.2fr 08.fr 0.8fr 0.7fr 1.5fr 0.4fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "Top Top Top"
+        "Logo Logo Logo"
+        "Central Central Central"
+        "Central Central Central"
+        "Botonera Botonera Botonera"
+        "R1 R2 R3"
+        "Footer Footer Footer"; 
+      }
+
+  .Top { grid-area: Top;
+        background-color:#555451;
+        color:#000000;
+        text-align: center;
+        margin: 6px 6px 0px 6px;
+        font-size: 20px;
+      }
+  
+  .Logo { grid-area: Logo; 
+        background-color:#d4d1bc;
+        color:#054d63;
+        margin: 0px 6px;
+        padding: 20px;
+        text-align: right;
+        font-size: 18px;
+        font-family: 'pacifico', cursive;
+        display: inline-block
+    }
+  .Central { grid-area: Central; 
+         background-color: #FEF9EF;
+         background-image: url(Files/Fotos/platos2.jpg);
+         background-size: cover;
+         font-family: 'Pacifico', cursive;
+         font-size: 3.2rem;
+         text-align: center;
+         color: rgb(255, 255, 255);
+         text-shadow: 8px 8px #1f1f1ede;
+         margin: 0px 6px;
+        }
+
+         #slogan{font-family: roboto;
+            font-size: 2.5rem;}
+
+
+  .Botonera { grid-area: Botonera; 
+            background-color:#555451;
+            position: relative;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            margin: 0px 6px;
+
+          }
+            .caja{
+            width: 270px;
+            height: 150px;
+            color: #FFF;
+            text-align: center;
+            line-height: 150px;
+            margin: 15px;
+            float: left;
+            font-size: 26px;
+            font-family: 'roboto';
+            display: block;
+            align-items: space-between;
+          }
+          .caja1{
+            background-color: #e73922;
+            -webkit-transition: 1s linear;
+            transition: 1s linear;
+            opacity: 0.8;
+            text-decoration: none;
+          }
+          .caja1:hover{
+            -webkit-transform: scale(.8);
+            transform: scale(.8);
+            opacity: 1;
+          }
+          .caja2{
+            background-color: #ee8916;
+            -webkit-transition: 1s linear;
+            transition: 1s linear;
+            opacity:0.8;
+            text-decoration: none;
+          }
+          .caja2:hover{
+            -webkit-transform: scale(.8);
+            transform: scale(.8);
+            opacity: 1;
+          }
+          .caja3{
+            -webkit-transition: 1s linear;
+            transition: 1s linear;
+            background-color: #2b7264;
+            opacity:0.8;
+            text-decoration: none;
+          }
+          .caja3:hover{
+            -webkit-transform: scale(.8);
+            transform: scale(.8);
+            opacity: 1;
+          }
+          .caja4{
+            background-color: #318538;
+            -webkit-transition: 1s linear;
+            transition: 1s linear;
+            opacity:0.8;
+            text-decoration: none;
+          }
+          .caja4:hover{
+            -webkit-transform: scale(.8);
+            transform: scale(.8);
+            opacity:1}
+
+  .R1 { grid-area: R1;
+        background-color: #d4d1bc;
+        margin: 8px 0px 8px 6px;
+        text-align: center;
+        font-family: "roboto", sans-serif;
+        font-size:16px;}
+  
+  .R2 { grid-area: R2;
+        background-color: #FEF9EF;
+        margin: 8px 0px 8px 0px;
+        text-align:center;
+        font-family: "roboto", sans-serif;
+        font-size:16px;
+       }
+  
+  .R3 { grid-area: R3; 
+        background-color: #d4d1bc;
+        margin: 8px 6px 8px 0px;
+        text-align: center;
+        font-family: "roboto", sans-serif;
+        font-size:16px;
+      }
+  
+  .Footer { grid-area: Footer;
+        background-color: #31454b;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 15px;
+        margin: 0px 6px 6px 6px;
+        padding: 25px 15px 8px 30px;
+        color:rgb(22, 21, 21);
+        }
+        .redes{
+          display: block;
+          align-items: right !important; 
+        }
+        .redes a {
+          color: black;
+          opacity: 0.5;
+          text-decoration: none;
+          font-size: 45px;
+          padding: 0px 15px;
+        }
+        .redes a:hover {
+          opacity: 0.8;
+        }
+        
+
+  @media all and (min-width:600px)
+        and (max-width: 1023px) {
+          .body{
+            font-family: 'Roboto', sans-serif;
+      }
+      .container {
+            display: grid; 
+            grid-auto-flow: row dense; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows: 0.2fr 0.1fr 0.8fr 0.8fr 0.6fr 1.4fr 0.2fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+              "Top Top Top"
+              "Logo Logo Logo"
+              "Central Central Central"
+              "Central Central Central"
+              "Botonera Botonera Botonera"
+              "R1 R2 R3"
+              "Footer Footer Footer"; 
+            }
+      
+        .Top { grid-area: Top;
+              background-color:#555451;
+            }
+        
+        .Logo { grid-area: Logo; 
+              background-color:#d4d1bc; 
+          }
+        .Central { grid-area: Central; 
+               background-color: #FEF9EF;
+               background-image: url(Files/Fotos/platos.jpg);
+               background-size: cover;
+               opacity:0.9;
+               font-family: 'Pacifico', cursive;
+               font-size: 2rem;
+               text-align: center;
+               color: rgb(255, 255, 255);
+               text-shadow: 6px 6px #1f1f1ede;
+         }
+      
+               #slogan{font-family: roboto;
+                  font-size: 1 rem;}
+      
+      
+        .Botonera { grid-area: Botonera; 
+                  background-color:#555451;
+                  position: relative;
+                  align-items: center;
+                  display: flex;
+                  justify-content: space-around;
+      
+                }
+                  .caja{
+                  width: 180px;
+                  height: 130px;
+                  color: #FFF;
+                  text-align: center;
+                  line-height: 130px;
+                  margin: 7px;
+                  float: left;
+                  font-size: 18px;
+                  font-family: 'roboto';
+                  display: block;
+                  align-items: space-between;
+                }
+                .caja1{
+                  background-color: #e73922;
+                  -webkit-transition: 1s linear;
+                  transition: 1s linear;
+                  opacity: 0.8;
+                }
+                .caja1:hover{
+                  -webkit-transform: scale(.8);
+                  transform: scale(.8);
+                  opacity: 1;
+                }
+                .caja2{
+                  background-color: #845896;
+                  -webkit-transition: 1s linear;
+                  transition: 1s linear;
+                  opacity:0.8;
+                }
+                .caja2:hover{
+                  -webkit-transform: scale(.8);
+                  transform: scale(.8);
+                  opacity: 1;
+                }
+                .caja3{
+                  -webkit-transition: 1s linear;
+                  transition: 1s linear;
+                  background-color: #2980B9;
+                  opacity:0.8;
+                }
+                .caja3:hover{
+                  -webkit-transform: scale(.8);
+                  transform: scale(.8);
+                  opacity: 1;
+                }
+                .caja4{
+                  background-color: #318538;
+                  -webkit-transition: 1s linear;
+                  transition: 1s linear;
+                  opacity:0.8
+                }
+                .caja4:hover{
+                  -webkit-transform: scale(.8);
+                  transform: scale(.8);
+                  opacity:1}
+      
+        .R1 { grid-area: R1;
+              background-color: #d4d1bc; }
+        
+        .R2 { grid-area: R2;
+              background-color: #d4d1bc; }
+        
+        .R3 { grid-area: R3; 
+              background-color: #d4d1bc;}
+        
+        .Footer { grid-area: Footer;
+              background-color: #31454b; }
+
+        }
+  @media all and (max-width: 599px){
+    .body{
+      font-family: 'Roboto', sans-serif;
+    }
+  .container {
+      display: grid; 
+      grid-auto-flow: row dense; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 0.2fr 0.1fr 0.8fr 0.8fr 1.4fr 0.2fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "Top Top Top"
+        "Logo Logo Logo"
+        "Central Central Central"
+        "Botonera Botonera Botonera"
+        "R1 R2 R3"
+        "Footer Footer Footer"; 
+      }
+
+  .Top { grid-area: Top;
+        background-color:#555451;
+      }
+  
+  .Logo { grid-area: Logo; 
+        background-color:#d4d1bc; 
+    }
+  .Central { grid-area: Central; 
+         background-color: #FEF9EF;
+         background-image: url(Files/Fotos/platos2.jpg);
+         background-size: cover;
+         opacity:0.9;
+         font-family: 'Pacifico', cursive;
+         font-size: 1.2rem;
+         text-align: center;
+         color: rgb(255, 255, 255);
+         text-shadow: 6px 6px #1f1f1ede;}
+  
+  #slogan{font-family: roboto;
+    font-size: 0.4 rem;}
+  }
+  .Botonera { grid-area: "Botonera"; 
+            background-color:#a18f68;
+            position: relative;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+
+          }
+            .caja{
+            width: 290px;
+            height: 140px;
+            color: #FFF;
+            text-align: center;
+            line-height: 130px;
+            margin: 7px;
+            float: left;
+            font-size: 18px;
+            font-family: 'roboto';
+            display: block;
+            align-items: space-between;
+          }
+          .caja1{
+            background-color: #e73922;
+            -webkit-transition: 1s linear;
+            transition: 1s linear;
+            opacity: 0.8;
+          }
+          .caja1:hover{
+            -webkit-transform: scale(.8);
+            transform: scale(.8);
+            opacity: 1;
+          }
+          .caja2{
+            background-color: #845896;
+            -webkit-transition: 1s linear;
+            transition: 1s linear;
+            opacity:0.8;
+          }
+          .caja2:hover{
+            -webkit-transform: scale(.8);
+            transform: scale(.8);
+            opacity: 1;
+          }
+          .caja3{
+            -webkit-transition: 1s linear;
+            transition: 1s linear;
+            background-color: #2980B9;
+            opacity:0.8;
+          }
+          .caja3:hover{
+            -webkit-transform: scale(.8);
+            transform: scale(.8);
+            opacity: 1;
+          }
+          .caja4{
+            background-color: #318538;
+            -webkit-transition: 1s linear;
+            transition: 1s linear;
+            opacity:0.8
+          }
+          .caja4:hover{
+            -webkit-transform: scale(.8);
+            transform: scale(.8);
+            opacity:1}
+
+  .R1 { grid-area: R1;
+        background-color: #d4d1bc; }
+  
+  .R2 { grid-area: R2;
+        background-color: #d4d1bc; }
+  
+  .R3 { grid-area: R3; 
+        background-color: #d4d1bc;}
+  
+  .Footer { grid-area: Footer;
+        background-color: #31454b; }
+
+  }
+ } 

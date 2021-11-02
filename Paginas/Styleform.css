@@ -1,0 +1,111 @@
+body{
+    font-family:'pacifico', cursive;
+    background-color: #d4d1bc; 
+}
+
+@media screen and (min-width: 52em){
+    .centrado{
+       max-width: 52em;
+    }
+}
+#Pequerecetas{
+    font-size: 1.4em;
+    color:rgb(29, 26, 26);
+    display: center !important;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#titulo{
+    font-size: 3em;
+    color:rgb(88, 88, 112);
+    text-align: center;
+}   
+#List{
+    font-size: 3em;
+    padding-left: 20px;
+}
+.menu-indice ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #272626;
+    font-size: 2em;
+}
+.menu-indice ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: .7em 1em;
+}
+.menu-indice ul li a:hover{
+    background: rgba(136, 124, 121, 0.9);
+}
+.menu-indice ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu-indice li{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.Form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 2em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+form li + li {
+    margin-top: 1em;}
+  
+label {
+    display: inline-block;
+    width: 230px;
+    text-align: right;
+}
+  
+input,
+textarea {font: 1em "roboto";
+    width: 400px;
+    box-sizing: border-box;
+    border: 2px solid #999;
+}
+
+.button {
+    padding-left: 330px; 
+    margin-left: .5em;
+}
+
+.Footer { grid-area: Footer;
+    background-color: #31454b;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin: 0px 6px;
+    padding: 15px 15px 8px 30px;
+    color:rgb(22, 21, 21);
+    }
+    .redes{
+      display: block;
+      align-items: right !important; 
+    }
+    .redes a {
+      color: black;
+      opacity: 0.25;
+      text-decoration: none;
+      font-size: 45px;
+      padding: 0px 15px;
+    }
+    .redes a:hover {
+      opacity: 0.8;
+    }
